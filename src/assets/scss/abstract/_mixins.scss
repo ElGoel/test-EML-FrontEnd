@@ -1,0 +1,16 @@
+@use './breakpoints' as b;
+@use "sass:map";
+
+
+@mixin screen($breakpoint) {
+  @media #{map.get(b.$breakpoints, $breakpoint)} {
+    @content;
+  }
+};
+
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}

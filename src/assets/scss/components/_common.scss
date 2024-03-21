@@ -1,0 +1,48 @@
+// @use '../abstract/mixins';
+@use '../abstract/mixins' as *;
+@use '../abstract//typography' as t;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+  font-family: t.$font-family;
+  overflow-x: hidden;
+}
+
+.btn {
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  &-info{
+    background-color: rgb(94, 94, 196);
+    &:hover {
+      background-color: darken($color: rgb(94, 94, 196), $amount: 10);
+    }
+    width: 100px;
+    margin-right: 5px;
+  }
+  &-error{
+    width: 100px;
+    background-color: rgb(201, 84, 84);
+    &:hover {
+      background-color: darken($color: rgb(201, 84, 84), $amount: 10);
+    }
+  }
+
+  &-create {
+    width: 150px;
+    background-color: rgb(89, 47, 167);
+    margin-bottom: 5px;
+  }
+
+} 
