@@ -1,7 +1,78 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Test para EML Agencia Healthcare
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Installation
+
+Install the project in your pc
+
+```bash
+  git clone https://github.com/ElGoel/test-EML-FrontEnd
+  cd test-EML-FrontEnd
+  npm install
+  npm run dev
+```
+    
+#
+Developer With
+
+[![VueJs](https://img.shields.io/badge/VueJs-3FB984?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+
+
+## API Reference
+
+#### Get all Users
+
+```http
+  GET /api/users
+```
+
+#### Create a new user
+
+```http
+  POST /api/users
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `body` | `raw` | **Required**. all fields |
+
+
+#### Update User
+
+```http
+  GET /api/users/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `body` | `raw` | **Required**. Id of user to update |
+
+```http
+  GET /api/users/${id}
+```
+
+#### Delete User
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of user to delete |
+
+
+## Authors
+
+- [@elgoel](https://www.github.com/elgoel)
+
+
+![Logo](https://i.ibb.co/kB7HQbm/new-logo-angelo.png)
+
+
+
+## 🚀 About Me
+Highly motivated and results-oriented Front-End Developer with 3+ years of experience building user-friendly and engaging web applications. Skilled in Vue.js, React, React Native, and other front-end technologies. Passionate about creating intuitive and visually appealing user experiences. Eager to contribute to a collaborative team environment and learn from experienced professionals.
+
+
+## 🛠 Skills
+VueJs, HTML, CSS, React, Nodejs, Laravel
+
